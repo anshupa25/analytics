@@ -23,6 +23,10 @@ class(x5b)
 (x6 = seq(0,100,by=3))
 ?seq
 x6[20]    #access 20th element
+
+
+
+
 x6[3]
 methods(class='numeric')
 x6[c(2,4)]     #access 2nd and 4th element
@@ -177,5 +181,9 @@ aggregate(marks ~ gender, data=df1, FUN=max)
 
 
 (df2 = aggregate(cbind(marks,marks2) ~ gender + course, data=df1, FUN=mean))
+
+(course = sample(c('BBA','MBA'), size=30, replace=T, prob=c(.5,.5)))
+(grades = sample(c('A','B','C','D'), size=30, replace=T, prob=c(.4,.3,.2,.1)))
+
 
 #Lists----
